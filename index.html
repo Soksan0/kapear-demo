@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kapear helps people in Cambodia assess suspicious Telegram messages in Khmer and English."><meta name="theme-color" content="#071a1b">
+  <title>Kapear AI | Pause. Check. Protect.</title><link rel="stylesheet" href="./styles.css"><script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Kapear AI home"><span class="brand-mark" aria-hidden="true">K</span><span>Kapear <b>AI</b></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span><b>Menu</b></button>
+    <nav id="main-menu" aria-label="Main menu"><a href="#check">Live demo</a><a href="#how">How it works</a><a href="#data">Open data</a><a href="#privacy">Privacy</a><a class="nav-telegram" href="https://t.me/KapearAI_bot">Open Telegram <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow light"><span class="live-dot"></span>Built for digital safety in Cambodia</p>
+        <h1 id="hero-title">Pause.<br><span>Check.</span> Protect.</h1>
+        <p class="hero-lede">A bilingual AI assistant that turns suspicious Telegram messages into clear evidence and safer next steps.</p>
+        <div class="hero-actions"><a class="primary bright" href="#check">Start live demo <span aria-hidden="true">→</span></a><a class="secondary" href="https://t.me/KapearAI_bot">Try in Telegram <span aria-hidden="true">↗</span></a></div>
+        <div class="trust-row" aria-label="Kapear benefits"><span><b>KH + EN</b> bilingual guidance</span><span><b>Private</b> by design</span><span><b>Open data</b> evidence</span></div>
+      </div>
+      <div class="bot-stage" aria-label="Preview of a Kapear bot conversation">
+        <div class="ambient-ring ring-one"></div><div class="ambient-ring ring-two"></div>
+        <div class="phone-card">
+          <div class="phone-top"><div class="bot-avatar">K<span></span></div><div><b>Kapear AI</b><small><span class="online-dot"></span> Online · responds instantly</small></div><button type="button" class="more-button" aria-label="Conversation options">•••</button></div>
+          <div class="chat-area"><p class="day-label">TODAY</p><div class="message-bubble incoming"><small>KAPEAR AI</small><span lang="km">សួស្តី! ខ្ញុំអាចជួយពិនិត្យសារដែលគួរឱ្យសង្ស័យ។</span><span>Hello! Send me a suspicious message or link and I’ll help you check it.</span><time>10:24</time></div><div class="message-bubble outgoing">Urgent! Your account will be locked. Send your verification code.<time>10:25 <b>✓✓</b></time></div><div class="scan-bubble"><div class="scan-icon"><span></span></div><div><b>Checking message…</b><small>Looking for scam signals & known links</small></div><span class="scan-pulse"></span></div></div>
+          <div class="composer"><span>Message Kapear…</span><b aria-hidden="true">➤</b></div>
+        </div>
+        <p class="floating-proof proof-one"><b>✓</b><span><strong>No link opened</strong><small>Safe local analysis</small></span></p><p class="floating-proof proof-two"><b>!</b><span><strong>Risk cue found</strong><small>Urgency + code request</small></span></p>
+      </div>
+    </section>
+    <section class="impact-strip" aria-label="Kapear overview"><p><strong>One message.</strong><span>One clear answer.</span></p><p><strong>3 safety layers</strong><span>Rules · AI · open data</span></p><p><strong>0 links opened</strong><span>Checks without visiting</span></p><p><strong>2 languages</strong><span>Khmer and English</span></p></section>
+    <section id="check" class="demo-section">
+      <div class="section-intro"><p class="eyebrow"><span class="step-number">01</span> Interactive demo</p><h2>Choose a message.<br>See Kapear think.</h2><p>Pick a realistic scenario or paste your own fictional test message. Everything in this browser demo stays on your device.</p></div>
+      <div class="demo-shell">
+        <aside class="scenario-menu" aria-label="Demo scenario menu"><div class="menu-heading"><span>Demo menu</span><small>SELECT A SCENARIO</small></div><div id="examples" class="scenario-list"></div><div class="menu-tip"><span aria-hidden="true">✦</span><p><b>Presenter tip</b>Start with “Urgent account” for the clearest risk story.</p></div></aside>
+        <div class="demo-workspace">
+          <div class="workspace-topbar"><div><span class="workspace-status"></span><b>Kapear message analyzer</b></div><fieldset class="language"><legend>Result language</legend><label><input type="radio" name="lang" value="en" checked><span>EN</span></label><label><input type="radio" name="lang" value="km"><span lang="km">ខ្មែរ</span></label></fieldset></div>
+          <form id="checker"><div class="input-heading"><label for="message">Suspicious message or link</label><span id="char-count">0 / 4096</span></div><div class="textarea-wrap"><textarea id="message" name="message" rows="5" maxlength="4096" required placeholder="Paste a fictional message here…"></textarea><span class="text-corner" aria-hidden="true"></span></div><div class="form-actions"><p><span class="shield-mini">✓</span> Your text never leaves this browser demo.</p><button class="primary analyze-button" type="submit"><span>Analyze message</span><b aria-hidden="true">→</b></button></div></form>
+          <div class="analysis-progress" id="analysis-progress" aria-hidden="true"><div><span></span></div><p>Scanning language signals</p><p>Checking open data</p><p>Preparing safer next steps</p></div>
+          <section class="result" id="result" aria-live="polite" aria-atomic="true"><div class="empty-result"><div class="radar-icon"><span></span></div><p class="eyebrow">Ready to check</p><h3>Your result will appear here</h3><p>Kapear explains what it notices—not just a score—so you can decide what to do next.</p></div></section>
+        </div>
+      </div>
+    </section>
+    <section id="how" class="how-section"><div class="section-intro compact"><p class="eyebrow"><span class="step-number">02</span> How it works</p><h2>Trust needs an explanation.</h2></div><div class="how-grid"><article><span class="feature-number">01</span><div class="feature-icon">Aa</div><h3>Reads the signals</h3><p>Recognizes pressure, impersonation, code requests, and other scam patterns in Khmer or English.</p></article><article><span class="feature-number">02</span><div class="feature-icon">⌁</div><h3>Checks known links</h3><p>Compares exact URLs with a dated PhishTank snapshot—without opening the submitted link.</p></article><article><span class="feature-number">03</span><div class="feature-icon">✓</div><h3>Explains what to do</h3><p>Returns plain-language evidence, uncertainty, and practical next steps instead of a mysterious score.</p></article></div></section>
+    <section id="data" class="evidence-section"><div><p class="eyebrow light"><span class="step-number">03</span> Evidence, not guesswork</p><h2>Built on open<br>threat intelligence.</h2><p>Kapear uses a dated PhishTank snapshot as one layer of evidence. A new or unreported scam may still be missing, so every answer also explains uncertainty.</p><a href="https://phishtank.org/developer_info.php">View PhishTank documentation <span aria-hidden="true">↗</span></a></div><div class="data-card"><p class="data-card-label">OPEN DATA SNAPSHOT <span>LIVE</span></p><dl class="snapshot"><div><dt>Source</dt><dd>PhishTank</dd></div><div><dt>Imported indicators</dt><dd id="row-count">Checking…</dd></div><div><dt>Snapshot date</dt><dd id="snapshot-date">Checking…</dd></div></dl><details><summary>View synthetic test cases <span>+</span></summary><ul id="test-list"></ul></details></div></section>
+    <section id="pilot" class="pilot-section"><p class="eyebrow"><span class="step-number">04</span> Community pilot</p><div><h2>Help make scam detection work better in Khmer.</h2><p>Invited testers can preview and edit redacted samples before saving them for private review—and withdraw reports at any time using a receipt code.</p><p id="pilot-totals" class="pilot-total"></p></div><a class="primary" href="https://t.me/KapearAI_bot">Contribute in Telegram <span aria-hidden="true">↗</span></a></section>
+    <section id="privacy" class="privacy-section"><div class="privacy-mark"><span>✓</span></div><div><p class="eyebrow">Privacy by design</p><h2>You choose what to share.</h2><p>Kapear checks only what you intentionally send. It never visits submitted links, stores only daily outcome and latency totals, and keeps the browser demo entirely on your device.</p><p class="privacy-note">Always remove personal details, passwords, and one-time codes before submitting a message.</p></div></section>
+    <section class="final-cta"><p class="eyebrow light">A safer pause before the tap</p><h2>Not sure about a message?<br><span>Ask Kapear first.</span></h2><a class="primary bright" href="https://t.me/KapearAI_bot">Open @KapearAI_bot <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer><a class="wordmark" href="#top"><span class="brand-mark">K</span><span>Kapear <b>AI</b></span></a><p>Digital safety guidance for Cambodia.</p><a href="https://v0-open-data-x-ai-hackathon.vercel.app/hackathon.html">Open Data × AI Venture Hackathon <span aria-hidden="true">↗</span></a></footer>
+</body></html>
